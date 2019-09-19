@@ -1,157 +1,42 @@
 'use strict';
 
-let t1 = 0;
-let t2 = 0;
-let t3 = 0;
-let t4 = 0;
-let t5 = 0;
-let t6 = 0;
-let flip;
+const roll = function(n) {
+    return Math.floor(Math.random() * n + 1);
+}
 
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-flip = Math.random();
-flip = Math.floor(flip * 6 + 1);
-if (flip === 1)
-    t1++;
-else if (flip === 2)
-    t2++;
-else if (flip === 3)
-    t3++;
-else if (flip === 4)
-    t4++;
-else if (flip === 5)
-    t5++;
-else if (flip === 6)
-    t6++;
-
-console.log('t1: ' + t1);
-console.log('t2: ' + t2);
-console.log('t3: ' + t3);
-console.log('t4: ' + t4);
-console.log('t5: ' + t5);
-console.log('t6: ' + t6);
+let res;
+let ones = 0;
+let twos = 0;
+let threes = 0;
+let fours = 0;
+let fives = 0;
+let sixes = 0;
+for (let i = 0; i < 10; i++) {
+res = roll(6);
+switch (res) {
+    case 1:
+        ones++;
+        break;
+    case 2:
+        twos++;
+        break;
+    case 3:
+        threes++;
+        break;
+    case 4:
+        fours++;
+        break;
+    case 5:
+        fives++;
+        break;
+    case 6:
+        sixes++;
+        break;
+}
+}
+console.log(`ones:\t ${ones}`);
+console.log(`twos:\t ${twos}`);
+console.log(`threes:\t ${threes}`);
+console.log(`fours:\t ${fours}`);
+console.log(`fives:\t ${fives}`);
+console.log(`sixes:\t ${sixes}`);
