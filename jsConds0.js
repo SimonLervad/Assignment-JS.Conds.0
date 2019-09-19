@@ -29,9 +29,8 @@ switch (res) {
     case 5:
         fives++;
         break;
-    case 6:
+    default:
         sixes++;
-        break;
 }
 }
 console.log(`ones:\t ${ones}`);
