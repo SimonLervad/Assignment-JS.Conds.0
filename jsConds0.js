@@ -14,10 +14,10 @@ let sixes = 0;
 for (let i = 0; i < 10; i++) {
 res = roll(6);
 switch (res) {
-    default: 					//den kører fint med default på plads nr. 1 ligeså vel som plads nr 6
+    case 1: 					//den kører fint med default på plads nr. 1 ligeså vel som plads nr 6
     	ones++;
         break;
-    case 2: 					// hvis jeg kører default ind mere end et sted siger melder den fejl
+    default: 					// hvis jeg kører default ind mere end et sted siger melder den fejl
         twos++;
         break;
     case 3:
@@ -29,7 +29,7 @@ switch (res) {
     case 5:
         fives++;
         break;
-    default: 					// den melder samme fejl hvis jeg sætter den ind et andet sted end to kombineret med et
+    case 6: 					// den melder samme fejl hvis jeg sætter den ind et andet sted end to kombineret med et
         sixes++;
         break;
 }
